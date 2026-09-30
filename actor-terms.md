@@ -13,7 +13,7 @@ Version 1.0
 
 ---
 
-These Coherent Paradox Apify Actor Terms ("**Contract**") governs your use of the Actor identified on its Apify Store listing page ("**Actor**"), made available by Coherent Paradox - Unipessoal Lda, a company based in Portugal with Tax ID 518588602 ("**Creator**").
+These Coherent Paradox Apify Actor Terms ("**Contract**") govern your use of the Actor identified on its Apify Store listing page ("**Actor**"), made available by Coherent Paradox - Unipessoal Lda, a company based in Portugal with Tax ID 518588602 ("**Creator**").
 
 By running or otherwise using the Actor, you (also referred to as the "**User**") agree to the terms of this Contract.
 
