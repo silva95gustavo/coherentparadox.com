@@ -14,7 +14,7 @@ GitHub Pages: deploy from `master`, `/` (root). Custom domain: `coherentparadox.
 
    Static destination: `https://gustavosilva.me`; status: `302`; preserve query strings (matching the original redirect).
 4. Once the GitHub certificate is issued, enable Enforce HTTPS in GitHub Pages. Enable Cloudflare proxy if desired, with SSL/TLS **Full (strict)**.
-5. Verify root returns the original redirect, `/actor-terms/` returns the contract, `/actor-terms` resolves to it, and `/actor-terms/contract.pdf` downloads the PDF.
+5. Verify root returns the original redirect, `/actor-terms/` returns the contract, `/actor-terms` resolves to it, and the logo and icon under `/actor-terms/brand/` load correctly.
 
 If the current redirect uses Page Rules, a Bulk Redirect, or a Worker, edit or replace that rule so it no longer catches the terms paths. Keep a single active catch-all redirect excluding the terms paths.
 
@@ -29,6 +29,6 @@ The ACME certificate verification path must also bypass the redirect so GitHub c
 - Cloudflare SSL/TLS: Full (strict).
 - GitHub Pages: custom domain `coherentparadox.com`, approved certificate, Enforce HTTPS enabled.
 - First redirect rule: `www` terms paths return 302 to the same path on `https://coherentparadox.com`, preserving query strings.
-- Existing catch-all rule: original 302 to `https://gustavosilva.me`, preserving query strings, except terms paths and ACME certificate verification paths.
+- Existing catch-all rule: original 302 to `https://gustavosilva.me`, preserving query strings, except terms paths (including branding assets) and ACME certificate verification paths.
 
-Verified: root and `www` root retain the original 302; `/actor-terms/` and its PDF return 200; `/actor-terms` redirects to the trailing-slash URL. The live PDF matches the approved source exactly.
+Verified: root and `www` root retain the original 302; `/actor-terms/` returns 200; `/actor-terms` redirects to the trailing-slash URL. The PDF download was removed from the website.

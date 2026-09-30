@@ -6,17 +6,19 @@
   <meta name="description" content="Actor terms for Coherent Paradox - Unipessoal Lda.">
   <title>{{ page.title }} · {{ site.title }}</title>
   <link rel="canonical" href="{{ page.url | absolute_url }}">
+  <link rel="icon" type="image/png" href="/actor-terms/brand/icon.png">
   <style>
-    :root { color-scheme: light; --ink:#162d30; --muted:#586b6c; --line:#dce5e3; --accent:#146f64; }
+    :root { color-scheme: light; --ink:#343434; --muted:#616b69; --line:#dce6e3; --accent:#007e6e; --brand:#00c6ac; }
     * { box-sizing:border-box; }
     html { scroll-behavior:smooth; scroll-padding-top:2rem; }
-    body { margin:0; background:#f6f8f5; color:var(--ink); font:16px/1.75 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+    body { margin:0; background:#f5f8f7; color:var(--ink); font:16px/1.75 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
     a { color:var(--accent); text-underline-offset:3px; }
-    a:hover { color:#0b4942; }
-    a:focus-visible, summary:focus-visible { outline:3px solid #dfad58; outline-offset:5px; }
-    header { border-bottom:1px solid var(--line); background:#fff; }
-    .bar { max-width:1180px; margin:auto; padding:24px 32px; display:flex; align-items:center; justify-content:space-between; gap:20px; }
-    .brand { font-weight:650; font-size:19px; text-decoration:none; letter-spacing:-.5px; color:var(--ink); }
+    a:hover { color:#005c50; }
+    a:focus-visible, summary:focus-visible { outline:3px solid var(--brand); outline-offset:5px; }
+    header { border-bottom:3px solid var(--brand); background:#fff; }
+    .bar { max-width:1180px; margin:auto; padding:12px 32px; display:flex; align-items:center; justify-content:space-between; gap:20px; }
+    .brand { display:block; flex-shrink:0; }
+    .brand img { display:block; width:264px; height:auto; }
     .label { font-size:12px; text-transform:uppercase; letter-spacing:2px; color:var(--muted); }
     .shell { max-width:1180px; margin:48px auto 80px; padding:0 32px; display:grid; grid-template-columns:220px minmax(0,1fr); gap:48px; align-items:start; }
     aside { position:sticky; top:32px; }
@@ -24,7 +26,6 @@
     nav ol { padding-left:20px; margin:20px 0 28px; }
     nav li { margin-bottom:10px; font-size:13px; line-height:1.5; }
     nav a { color:var(--muted); text-decoration:none; }
-    .download { display:inline-block; padding:10px 16px; border:1px solid var(--line); border-radius:7px; background:white; font-size:13px; font-weight:600; text-decoration:none; }
     article { background:white; border:1px solid var(--line); border-radius:12px; padding:42px 48px; min-width:0; }
     h1 { margin:0 0 12px; font-size:clamp(28px,3.5vw,40px); line-height:1.2; letter-spacing:-1px; font-weight:650; }
     h2 { font-size:22px; letter-spacing:-.4px; line-height:1.4; margin:42px 0 16px; }
@@ -32,14 +33,14 @@
     strong { font-weight:650; }
     hr { border:0; border-top:1px solid var(--line); margin:28px 0; }
     footer { max-width:1180px; margin:0 auto; border-top:1px solid var(--line); padding:24px 32px 40px; color:var(--muted); font-size:13px; }
-    @media(max-width:850px) { .shell { display:block; margin-top:28px; } aside { position:static; margin-bottom:24px; } nav ol { columns:2; } .download { margin-top:6px; } article { padding:30px; } }
-    @media(max-width:520px) { .bar { padding:20px; } .brand { font-size:17px; } .label { font-size:10px; letter-spacing:1px; } .shell { padding:0 16px; margin-bottom:40px; } article { padding:24px 20px; border-radius:8px; } nav ol { columns:1; } h2 { font-size:20px; } footer { padding:24px 20px; } }
+    @media(max-width:850px) { .shell { display:block; margin-top:28px; } aside { position:static; margin-bottom:24px; } nav ol { columns:2; } article { padding:30px; } }
+    @media(max-width:520px) { .bar { padding:12px 16px; gap:12px; } .brand img { width:200px; } .label { font-size:10px; letter-spacing:1px; } .shell { padding:0 16px; margin-bottom:40px; } article { padding:24px 20px; border-radius:8px; } nav ol { columns:1; } h2 { font-size:20px; } footer { padding:24px 20px; } }
     @media(prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } }
     @media print { body { background:white; font-size:10pt; color:black; } header,aside,footer { display:none; } .shell { display:block; margin:0; padding:0; max-width:none; } article { border:0; padding:0; } h1 { font-size:22pt; } h2 { break-after:avoid; font-size:14pt; margin-top:24px; } p { orphans:3; widows:3; } a { color:inherit; } }
   </style>
 </head>
 <body>
-  <header><div class="bar"><a class="brand" href="/">Coherent Paradox</a><span class="label">Actor terms</span></div></header>
+  <header><div class="bar"><a class="brand" href="/" aria-label="Coherent Paradox homepage"><img src="/actor-terms/brand/logo.png" alt="Coherent Paradox" width="1144" height="402"></a><span class="label">Actor terms</span></div></header>
   <main class="shell">
     <aside aria-label="Contract navigation">
       <details open><summary>On this page</summary><nav aria-label="Sections"><ol>
@@ -54,7 +55,6 @@
         <li><a href="#9-term-and-termination">Term and termination</a></li>
         <li><a href="#10-general">General</a></li>
       </ol></nav></details>
-      <a class="download" href="./contract.pdf">Download PDF ↗</a>
     </aside>
     <article aria-label="Actor contract">{{ content }}</article>
   </main>
