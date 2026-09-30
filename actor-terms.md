@@ -4,7 +4,7 @@ title: Actor terms
 permalink: /actor-terms/
 ---
 
-# Standard Actor Contract
+# Coherent Paradox Actor Terms
 
 <!-- vale off -->
 <!-- markdownlint-disable -->
