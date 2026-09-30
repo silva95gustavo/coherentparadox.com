@@ -1,0 +1,12 @@
+title: Coherent Paradox
+url: https://coherentparadox.com
+baseurl: ""
+markdown: kramdown
+kramdown:
+  auto_ids: true
+exclude:
+  - README.md
+  - DEPLOYMENT.md
+  - LICENSE
+  - scripts
+  - .gitignore
