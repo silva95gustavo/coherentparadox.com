@@ -33,4 +33,3 @@ The ACME certificate verification path must also bypass the redirect so GitHub c
 
 Verified: root and `www` root retain the original 302; `/apify-actor-terms/` returns 200; `/apify-actor-terms` redirects to the trailing-slash URL. The PDF download was removed from the website.
 
-Legacy `/actor-terms` URLs redirect to the equivalent `/apify-actor-terms` URL with a 301 response, preserving query strings.
