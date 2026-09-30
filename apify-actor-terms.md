@@ -112,5 +112,3 @@ Where an Actor constitutes or incorporates an AI system within the meaning of th
 10.5. Failure to enforce any provision of this Contract does not constitute a waiver of the right to enforce it in the future.
 
 10.6. Apify is not a party to this Contract and bears no liability arising from it. Any claims relating to the Actor should be directed to the Creator, not Apify, except when the claim concerns the Apify platform itself, in which case Apify's own terms apply.
-
-These Coherent Paradox Apify Actor Terms are adapted from a template provided by Apify and do not constitute legal advice from Apify.
