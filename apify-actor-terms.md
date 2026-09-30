@@ -1,7 +1,7 @@
 ---
 layout: terms
 title: Coherent Paradox Apify Actor Terms
-permalink: /actor-terms/
+permalink: /apify-actor-terms/
 ---
 
 # Coherent Paradox Apify Actor Terms
