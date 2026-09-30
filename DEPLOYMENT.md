@@ -21,3 +21,14 @@ If the current redirect uses Page Rules, a Bulk Redirect, or a Worker, edit or r
 Official setup: https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site
 
 The ACME certificate verification path must also bypass the redirect so GitHub can renew the HTTPS certificate. Email and domain verification DNS records must be preserved.
+
+## Current production setup
+
+- Apex: four GitHub Pages A records and four AAAA records, proxied by Cloudflare.
+- `www`: proxied CNAME to `silva95gustavo.github.io`.
+- Cloudflare SSL/TLS: Full (strict).
+- GitHub Pages: custom domain `coherentparadox.com`, approved certificate, Enforce HTTPS enabled.
+- First redirect rule: `www` terms paths return 302 to the same path on `https://coherentparadox.com`, preserving query strings.
+- Existing catch-all rule: original 302 to `https://gustavosilva.me`, preserving query strings, except terms paths and ACME certificate verification paths.
+
+Verified: root and `www` root retain the original 302; `/actor-terms/` and its PDF return 200; `/actor-terms` redirects to the trailing-slash URL. The live PDF matches the approved source exactly.
