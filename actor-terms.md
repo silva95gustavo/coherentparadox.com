@@ -1,10 +1,10 @@
 ---
 layout: terms
-title: Actor terms
+title: Coherent Paradox Apify Actor Terms
 permalink: /actor-terms/
 ---
 
-# Coherent Paradox Actor Terms
+# Coherent Paradox Apify Actor Terms
 
 <!-- vale off -->
 <!-- markdownlint-disable -->
@@ -13,7 +13,7 @@ Version 1.0
 
 ---
 
-This Standard Actor Contract ("**Contract**") governs your use of the Actor identified on its Apify Store listing page ("**Actor**"), made available by Coherent Paradox - Unipessoal Lda, a company based in Portugal with Tax ID 518588602 ("**Creator**").
+These Coherent Paradox Apify Actor Terms ("**Contract**") governs your use of the Actor identified on its Apify Store listing page ("**Actor**"), made available by Coherent Paradox - Unipessoal Lda, a company based in Portugal with Tax ID 518588602 ("**Creator**").
 
 By running or otherwise using the Actor, you (also referred to as the "**User**") agree to the terms of this Contract.
 
@@ -113,4 +113,4 @@ Where an Actor constitutes or incorporates an AI system within the meaning of th
 
 10.6. Apify is not a party to this Contract and bears no liability arising from it. Any claims relating to the Actor should be directed to the Creator, not Apify, except when the claim concerns the Apify platform itself, in which case Apify's own terms apply.
 
-This Standard Actor Contract is a template provided by Apify for Creators who do not publish their own end-user terms. It is provided for convenience and does not constitute legal advice from Apify.
+These Coherent Paradox Apify Actor Terms are adapted from a template provided by Apify and do not constitute legal advice from Apify.
